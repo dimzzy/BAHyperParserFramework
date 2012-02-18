@@ -1,0 +1,3 @@
+[submodule "BAHyperParser"]
+	path = BAHyperParser
+	url = git@github.com:dimzzy/BAHyperParser.git

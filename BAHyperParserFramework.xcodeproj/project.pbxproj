@@ -6,17 +6,53 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1FFDDE7914EF8CAA00ACF8BA /* BAHyperParser */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1FFDDE7A14EF8CAA00ACF8BA /* Build configuration list for PBXAggregateTarget "BAHyperParser" */;
+			buildPhases = (
+				1FFDDE7D14EF8CCD00ACF8BA /* ShellScript */,
+				1FFDDE7E14EF8CEA00ACF8BA /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = BAHyperParser;
+			productName = BAHyperParser;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1FFDDE6414EF8ABC00ACF8BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFDDE6314EF8ABC00ACF8BA /* Foundation.framework */; };
-		1FFDDE6A14EF8ABC00ACF8BA /* BAHyperParserFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFDDE6914EF8ABC00ACF8BA /* BAHyperParserFramework.m */; };
+		1FFDDE7514EF8B5800ACF8BA /* BAHyperHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FFDDE7114EF8B5800ACF8BA /* BAHyperHandler.h */; };
+		1FFDDE7614EF8B5800ACF8BA /* BAHyperHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFDDE7214EF8B5800ACF8BA /* BAHyperHandler.m */; };
+		1FFDDE7714EF8B5800ACF8BA /* BAHyperParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FFDDE7314EF8B5800ACF8BA /* BAHyperParser.h */; };
+		1FFDDE7814EF8B5800ACF8BA /* BAHyperParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFDDE7414EF8B5800ACF8BA /* BAHyperParser.m */; };
+		1FFDDE7F14EF8D0500ACF8BA /* BAHyperHandler.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FFDDE7114EF8B5800ACF8BA /* BAHyperHandler.h */; };
+		1FFDDE8014EF8D0500ACF8BA /* BAHyperParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FFDDE7314EF8B5800ACF8BA /* BAHyperParser.h */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FFDDE7E14EF8CEA00ACF8BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal/${PRODUCT_NAME}.framework/Versions/A/Headers/";
+			dstSubfolderSpec = 0;
+			files = (
+				1FFDDE7F14EF8D0500ACF8BA /* BAHyperHandler.h in CopyFiles */,
+				1FFDDE8014EF8D0500ACF8BA /* BAHyperParser.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1FFDDE6014EF8ABC00ACF8BA /* libBAHyperParserFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBAHyperParserFramework.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFDDE6314EF8ABC00ACF8BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1FFDDE6714EF8ABC00ACF8BA /* BAHyperParserFramework-Prefix.pch */ = {isa = PBXFileReference; path = "BAHyperParserFramework-Prefix.pch"; sourceTree = "<group>"; };
-		1FFDDE6814EF8ABC00ACF8BA /* BAHyperParserFramework.h */ = {isa = PBXFileReference; path = BAHyperParserFramework.h; sourceTree = "<group>"; };
-		1FFDDE6914EF8ABC00ACF8BA /* BAHyperParserFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAHyperParserFramework.m; sourceTree = "<group>"; };
+		1FFDDE6714EF8ABC00ACF8BA /* BAHyperParserFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BAHyperParserFramework-Prefix.pch"; sourceTree = "<group>"; };
+		1FFDDE7114EF8B5800ACF8BA /* BAHyperHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAHyperHandler.h; sourceTree = "<group>"; };
+		1FFDDE7214EF8B5800ACF8BA /* BAHyperHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAHyperHandler.m; sourceTree = "<group>"; };
+		1FFDDE7314EF8B5800ACF8BA /* BAHyperParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAHyperParser.h; sourceTree = "<group>"; };
+		1FFDDE7414EF8B5800ACF8BA /* BAHyperParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAHyperParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +70,7 @@
 		1FFDDE5514EF8ABB00ACF8BA = {
 			isa = PBXGroup;
 			children = (
+				1FFDDE7014EF8B5800ACF8BA /* BAHyperParser */,
 				1FFDDE6514EF8ABC00ACF8BA /* BAHyperParserFramework */,
 				1FFDDE6214EF8ABC00ACF8BA /* Frameworks */,
 				1FFDDE6114EF8ABC00ACF8BA /* Products */,
@@ -59,19 +96,20 @@
 		1FFDDE6514EF8ABC00ACF8BA /* BAHyperParserFramework */ = {
 			isa = PBXGroup;
 			children = (
-				1FFDDE6814EF8ABC00ACF8BA /* BAHyperParserFramework.h */,
-				1FFDDE6914EF8ABC00ACF8BA /* BAHyperParserFramework.m */,
-				1FFDDE6614EF8ABC00ACF8BA /* Supporting Files */,
+				1FFDDE6714EF8ABC00ACF8BA /* BAHyperParserFramework-Prefix.pch */,
 			);
 			path = BAHyperParserFramework;
 			sourceTree = "<group>";
 		};
-		1FFDDE6614EF8ABC00ACF8BA /* Supporting Files */ = {
+		1FFDDE7014EF8B5800ACF8BA /* BAHyperParser */ = {
 			isa = PBXGroup;
 			children = (
-				1FFDDE6714EF8ABC00ACF8BA /* BAHyperParserFramework-Prefix.pch */,
+				1FFDDE7114EF8B5800ACF8BA /* BAHyperHandler.h */,
+				1FFDDE7214EF8B5800ACF8BA /* BAHyperHandler.m */,
+				1FFDDE7314EF8B5800ACF8BA /* BAHyperParser.h */,
+				1FFDDE7414EF8B5800ACF8BA /* BAHyperParser.m */,
 			);
-			name = "Supporting Files";
+			path = BAHyperParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +119,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFDDE7514EF8B5800ACF8BA /* BAHyperHandler.h in Headers */,
+				1FFDDE7714EF8B5800ACF8BA /* BAHyperParser.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,16 +165,34 @@
 			projectRoot = "";
 			targets = (
 				1FFDDE5F14EF8ABC00ACF8BA /* BAHyperParserFramework */,
+				1FFDDE7914EF8CAA00ACF8BA /* BAHyperParser */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FFDDE7D14EF8CCD00ACF8BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build\n\nSIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\" &&\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" &&\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\" &&\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}\" &&\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${PRODUCT_NAME}.framework\" &&\n\n# Create framework directory structure.\nrm -rf \"${FRAMEWORK}\" &&\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Headers\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Resources\" &&\n\n# Generate universal binary for the device and simulator.\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\" &&\n\n# Move files to appropriate locations in framework paths.\ncp \"${UNIVERSAL_LIBRARY_PATH}\" \"${FRAMEWORK}/Versions/A\" &&\nln -s \"A\" \"${FRAMEWORK}/Versions/Current\" &&\nln -s \"Versions/Current/Headers\" \"${FRAMEWORK}/Headers\" &&\nln -s \"Versions/Current/Resources\" \"${FRAMEWORK}/Resources\" &&\nln -s \"Versions/Current/${PRODUCT_NAME}\" \"${FRAMEWORK}/${PRODUCT_NAME}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1FFDDE5C14EF8ABC00ACF8BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FFDDE6A14EF8ABC00ACF8BA /* BAHyperParserFramework.m in Sources */,
+				1FFDDE7614EF8B5800ACF8BA /* BAHyperHandler.m in Sources */,
+				1FFDDE7814EF8B5800ACF8BA /* BAHyperParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +203,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+					i386,
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -159,7 +221,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -168,14 +230,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = (
+					armv7,
+					armv6,
+					i386,
+				);
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -205,6 +271,20 @@
 			};
 			name = Release;
 		};
+		1FFDDE7B14EF8CAA00ACF8BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FFDDE7C14EF8CAA00ACF8BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -222,6 +302,14 @@
 			buildConfigurations = (
 				1FFDDE6E14EF8ABC00ACF8BA /* Debug */,
 				1FFDDE6F14EF8ABC00ACF8BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FFDDE7A14EF8CAA00ACF8BA /* Build configuration list for PBXAggregateTarget "BAHyperParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFDDE7B14EF8CAA00ACF8BA /* Debug */,
+				1FFDDE7C14EF8CAA00ACF8BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
